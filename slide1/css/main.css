@@ -1,0 +1,25 @@
+body{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;    
+}
+
+
+/************************************************************************************************
+ * HEADER
+************************************************************************************************/
+
+
+.md-trigger{
+  margin-left: 0;
+  margin-top: 0;
+  width: 1024px;
+  height: 768px;
+  float: left;
+  position: absolute;
+  z-index: 3500;
+}
+

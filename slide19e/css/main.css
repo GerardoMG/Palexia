@@ -1,0 +1,422 @@
+body{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;    
+}
+
+
+/************************************************************************************************
+ * HEADER
+************************************************************************************************/
+
+.header{
+  margin-bottom: 18px;
+  position: relative;
+  height: 155px;
+  width: 100%;
+}
+
+.header .logo{
+  margin-left: 20px;
+  margin-top: 20px;
+  float: left;
+}
+
+.header .firma{
+  margin-right: 10px;
+  margin-top: 20px;
+  float: right;
+}
+
+.header .title, .header .topermaInfo{
+  position: absolute;
+  left: 65px;
+}
+
+.header .title{
+  top: 40px;
+  -webkit-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.header .topermaInfo{
+  top: 90px;
+  -webkit-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+body.horizontal .header .leyenda{
+  font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 1.25em;
+  position: absolute;
+  text-align: center;
+  font-weight: 700;
+  font-size: 27px;
+  height: auto;
+  width: 710px;
+  color: black;
+  right: 10px;
+  bottom: 25px;
+}
+
+body.horizontal .header .leyenda b{
+  font-weight: 700;
+  color: #cf8a2a;
+}
+
+/************************************************************************************************
+ * SWITCH
+************************************************************************************************/
+
+.onoffswitch {
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    position: relative; width: 70px;
+    left: 165px;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 25px;
+}
+
+.onoffswitch-inner {
+    width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    float: left; width: 50%; height: 25px; padding: 0; line-height: 25px;
+    font-size: 11px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    color: #FFFFFF;
+
+   -moz-box-shadow:    inset 0 5px 30px #666;
+   -webkit-box-shadow: inset 0 5px 30px #666;
+   box-shadow:         inset 0 5px 30px #666;    
+}
+
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    color: #FFFFFF;
+    text-align: right;
+    
+   -moz-box-shadow:    inset 0 5px 30px #666;
+   -webkit-box-shadow: inset 0 5px 30px #666;
+   box-shadow:         inset 0 5px 30px #666;    
+}
+
+.onoffswitch-switch {
+  background: transparent url(../img/control-btn.png) scroll no-repeat center center;
+
+  width: 30px;
+  height: 30px;
+  margin: 1px;
+
+  position: absolute; top: 0; bottom: 0; right: 41px;
+  -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+
+.losartan .onoffswitch-inner:before,
+.losartan .onoffswitch-inner:after{
+  background-color: #468dcb;
+}
+.irbesartan .onoffswitch-inner:before,
+.irbesartan .onoffswitch-inner:after{
+  background-color: #c6c7c9;
+}
+.valsartan .onoffswitch-inner:before,
+.valsartan .onoffswitch-inner:after{
+  background-color: #636466;
+}
+.atacand .onoffswitch-inner:before,
+.atacand .onoffswitch-inner:after{
+  background-color: #f6b400;
+}
+
+/************************************************************************************************
+ * CONTENT
+************************************************************************************************/
+
+.content{
+  position: relative;
+  height: 595px;
+  width: 100%;
+}
+
+/************************************************************************************************
+ * CONTENT GRAPH
+************************************************************************************************/
+
+.content .graph{
+  background: transparent url(../img/graphs/grafica.png) scroll no-repeat center center;
+  margin-right: 0px;
+  height: 491px;
+  width: 574px;
+  float: left;
+  margin-left: 140px;
+  -webkit-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;  
+}
+
+.content .graph .graph-line{
+  position: absolute;
+  left: 240px;
+}
+
+.content .graph .graph-line img{
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+.content .graph #one{
+  height: 167px;
+  top: 127px;
+  width: 425px;
+}
+.content .graph #two{
+  height: 113px;
+  top: 63px;
+  width: 427px;
+}
+.content .graph #three{
+  height: 168px;
+  top: 83px;
+  width: 427px;
+}
+.content .graph #four{}
+
+/************************************************************************************************
+ * CONTENT RIGHT BLOCK
+************************************************************************************************/
+
+.right-block{
+  position: relative;
+  height: 415px;
+  width: 302px;
+  float: left;
+}
+
+.right-block b{
+  color: #cf8a2a;
+}
+
+.right-block .veinticuatro{
+  text-align: center;
+  margin: 20px 0 20px 0;
+  float: left;
+  width: 100%;
+}
+
+.right-block .mas-info{
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+  color: #000;
+  font-family: 'PT Sans Narrow', sans-serif;  
+}
+
+.right-block .mas-info ul{
+  list-style: none;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+.right-block .control{
+  position: absolute;
+  z-index: 5000;
+  left: 35px;
+  top: 60px;
+  -webkit-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;  
+}
+
+.right-block .pie{
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  -webkit-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.right-block .control ul{
+  margin: 0;
+  padding: 0;
+}
+.right-block .control ul li{
+  width: 265px;
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.right-block .control ul li .title{
+  line-height: 1em;
+  position: absolute;
+  font-weight: 900;
+  font-size: 12px;
+  font-family: arial;
+  top: 6px;
+  left: 0;
+}
+
+.right-block .mas-info .valsartan,
+.right-block .control .valsartan .title {
+  color: #636466;
+}
+.right-block .mas-info .irbesartan,
+.right-block .control .irbesartan .title {
+  color: #c6c7c9;
+}
+.right-block .mas-info .losartan,
+.right-block .control .losartan .title {
+  color: #468dcb;
+}
+
+/************************************************************************************************
+ * POsición de Elementos
+************************************************************************************************/
+
+
+.container img{
+  position: absolute;
+}
+
+.texto1,
+.texto2,
+.texto3,
+.texto4,
+.texto5,
+.texto6,
+.texto7,
+.texto8,
+.texto9,
+.texto10{
+  position: absolute;
+}
+
+.tabla, 
+.tabla1,
+.tabla2,
+.tabla3{
+  position: absolute;
+}
+
+.dato,
+.dato1,
+.dato2,
+.dato3{
+  position: absolute;
+}
+
+.hueso{
+  position: absolute;
+}
+
+.grafica,
+.grafica1,
+.grafica2,
+.grafica3,
+.grafica4,
+{
+position: absolute;
+}
+
+.bullet,
+.bullet1,
+.bullet2,
+.bullet3,
+.bullet4,
+.bullet5,
+.bullet6,
+.bullet7,
+.bullet8,
+.bullet9
+.bullet,
+.bullet1b,
+.bullet2b,
+.bullet3b,
+.bullet4b,
+.bullet5b,
+.bullet6b,
+.bullet7b,
+.bullet8b,
+.bullet9b{
+  position: absolute;
+}
+
+.barras{
+display: none;
+}
+
+.pullUp{
+display: block;
+}
+
+/************************************************************************************************
+ * ANIMATED
+************************************************************************************************/
+
+.btn5{
+	top: 24px;
+	left: 68px;
+	-webkit-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0s;
+}
+
+.caso1{
+	position: absolute;
+	top: 51px;
+	right: 77px;
+	-webkit-animation-delay: .5s;
+	-o-animation-delay: .5s;
+	animation-delay: .5s;
+}
+
+.texto1{
+	left: 50%;
+	margin-left:-446.5px;
+	top: 130px;
+	-webkit-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0s;
+}
+
+.texto2{
+	left: 515px;
+	margin-left: -446.5px;
+	top: 547px;
+	-webkit-animation-delay: .5s;
+	-o-animation-delay: .5s;
+	animation-delay: .5s;
+}
